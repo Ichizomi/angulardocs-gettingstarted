@@ -18,7 +18,7 @@ import { CartService } from './cart.service';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
-      { path: 'produts/:productId', component: ProductDetailsComponent }
+      { path: 'products/:productId', component: ProductDetailsComponent }
     ])
   ],
   declarations: [
