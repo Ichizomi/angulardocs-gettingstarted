@@ -11,6 +11,7 @@ import { HelloWorldBindingsComponent } from './hello-world-bindings/hello-world-
 import { HelloWorldNgIfComponent } from './hello-world-ngif/hello-world-ngif.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartService } from './cart.service';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { CartService } from './cart.service';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
-      { path: 'products/:productId', component: ProductDetailsComponent }
+      { path: 'products/:productId', component: ProductDetailsComponent },
+      { path: 'cart', component: CartComponent }
     ])
   ],
   declarations: [
@@ -28,7 +30,8 @@ import { CartService } from './cart.service';
     ProductAlertsComponent,
     HelloWorldBindingsComponent,
     HelloWorldNgIfComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    CartComponent
   ],
   bootstrap: [AppComponent],
   providers: [CartService]
