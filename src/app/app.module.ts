@@ -10,6 +10,7 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
 import { HelloWorldBindingsComponent } from './hello-world-bindings/hello-world-bindings.component';
 import { HelloWorldNgIfComponent } from './hello-world-ngif/hello-world-ngif.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { CartService } from './cart.service';
 
 @NgModule({
   imports: [
@@ -29,7 +30,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     HelloWorldNgIfComponent,
     ProductDetailsComponent
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [CartService]
 })
 export class AppModule {}
 
